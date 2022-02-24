@@ -131,3 +131,30 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/D0u9l4s/git_trainning.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$ git hist
+* 4ab098a 2022-02-23 | Alter hello.txt (HEAD -> master, origin/master) [Douglas]
+* a7fcad8 2022-02-23 | Creating hello.txt [Douglas]
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$ git cat-file -t a7fcad8
+commit
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$ git cat-file -p a7fcad8
+tree 68aba62e560c0ebc3396e8ae9335232cd93a3f60
+author Douglas <doug.ag@hotmail.com> 1645666009 -0300
+committer Douglas <doug.ag@hotmail.com> 1645666009 -0300
+
+Creating hello.txt
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$ git cat-file -t 68aba62
+tree
+
+douga@DEV MINGW64 /c/wamp64/www/git_trainning (master)
+$
