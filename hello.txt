@@ -1,1 +1,133 @@
 hello world
+git init
+#Initialized empty Git repository in C:/wamp64/www/git_trainning/.git/
+
+$ git remote add origin https://github.com/D0u9l4s/git_trainning.git
+
+$ git remote get-url origin
+https://github.com/D0u9l4s/git_trainning.git
+
+$ git config --global user.name "Douglas global"
+
+$ git config user.name
+Douglas global
+
+$ git config --local user.email "doug.ag@hotmail.com"
+
+$ git config --local user.name "Douglas"
+
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+
+$ git config --help
+
+$ git config -help
+usage: git config [<options>]
+
+$ echo "hello world" > hello.txt
+
+$ ls
+hello.txt
+
+git init
+#Initialized empty Git repository in C:/wamp64/www/git_trainning/.git/
+
+$ git remote add origin https://github.com/D0u9l4s/git_trainning.git
+
+git init
+#Initialized empty Git repository in C:/wamp64/www/git_trainning/.git/
+
+$ git remote add origin https://github.com/D0u9l4s/git_trainning.git
+
+$ git remote get-url origin
+https://github.com/D0u9l4s/git_trainning.git
+
+$ git config --global user.name "Douglas global"
+
+$ git config user.name
+Douglas global
+
+$ git config --local user.email "doug.ag@hotmail.com"
+
+$ git config --local user.name "Douglas"
+
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+
+$ git config --help
+
+$ git config -help
+usage: git config [<options>]
+
+$ echo "hello world" > hello.txt
+
+$ ls
+hello.txt
+
+git init
+#Initialized empty Git repository in C:/wamp64/www/git_trainning/.git/
+
+$ git remote add origin https://github.com/D0u9l4s/git_trainning.git
+
+$ git remote get-url origin
+https://github.com/D0u9l4s/git_trainning.git
+
+$ git config --global user.name "Douglas global"
+
+$ git config user.name
+Douglas global
+
+$ git config --local user.email "doug.ag@hotmail.com"
+
+$ git config --local user.name "Douglas"
+
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+
+$ git config --help
+
+$ git config -help
+usage: git config [<options>]
+
+$ echo "hello world" > hello.txt
+
+$ ls
+hello.txt
+
+$git commit -m "Creating hello.txt"
+[master (root-commit) a7fcad8] Creating hello.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+$ git hist
+* a7fcad8 2022-02-23 | Creating hello.txt (HEAD -> master) [Douglas]
+
+$ git log
+commit a7fcad893790429044981463c71c692a5ae85e8f (HEAD -> master)
+Author: Douglas <@hotmail.com>
+Date:   Wed Feb 23 22:26:49 2022 -0300
+
+    Creating hello.txt
+
+
+
+$ git show
+commit a7fcad893790429044981463c71c692a5ae85e8f (HEAD -> master)
+Author: Douglas <@hotmail.com>
+Date:   Wed Feb 23 22:26:49 2022 -0300
+
+    Creating hello.txt
+
+diff --git a/hello.txt b/hello.txt
+new file mode 100644
+index 0000000..3b18e51
+--- /dev/null
++++ b/hello.txt
+@@ -0,0 +1 @@
++hello world
+
+$ git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/D0u9l4s/git_trainning.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
